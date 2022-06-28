@@ -1,6 +1,20 @@
 # redis-stream
 Exposes [Redis stream](https://redis.io/topics/streams-intro) through the command line
 
+### Requirements
+
+You need to have [CMake]() installed on your machine.
+
+
+## make it executable
+Redis stream utilizes [hiredis]() as main dependency.
+
+```bash
+cmake -S . -B build/
+cd build
+make
+```
+
 ## Example
 Suppose we want to list all files containing both `'a'` and `'z'` characters
 e.g. azores.txt, arizona.md.
